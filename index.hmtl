@@ -1,0 +1,170 @@
+index.hmtl
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>أداة إظهار التفاحة (لغرض تعليمي)</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+            background-color: #f0f0f0;
+        }
+        /* ... (بقية تنسيقات CSS كما هي) ... */
+        .container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        input[type="text"], button {
+            width: 90%;
+            padding: 10px;
+            margin: 8px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        #result {
+            margin-top: 20px;
+            padding: 15px;
+            border: 2px dashed #f44336;
+            color: #333;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Apple of Fortune Hack (تعليمي)</h2>
+        <p>لتجنب الاحتيال، يجب أن تعرف كيف يعمل! هذه الصفحة لا تقوم بأي اختراق حقيقي.</p>
+
+        <input type="text" id="userID" placeholder="أدخل رقم تعريف الحساب (ID)">
+        
+        <button onclick="showApple()">إظهار التفاحة</button>
+
+        <div id="result" style="display: none;">
+            تم تحديد موقع التفاحة!
+        </div>
+        
+        <button onclick="resetPage()" style="background-color: #555;">إعادة الضبط</button>
+    </div>
+
+    <script>
+        function showApple() {
+            const user_id = document.getElementById('userID').value;
+            const result_div = document.getElementById('result');
+            
+            if (user_id.length < 5) {
+                alert("الرجاء إدخال رقم تعريف صحيح.");
+                return;
+            }
+            
+            // في هذا الجزء، في موقع احتيال حقيقي، يتم إرسال البيانات إلى المحتال.
+            // نحن هنا نعرض رسالة نجاح وهمية لغرض التعلم.
+            
+            result_div.style.display = 'block';
+            result_div.innerHTML = "✅ تم التحقق من الحساب! التفاحة موجودة في المربع رقم 4. أكمل الخطوة التالية في حسابك!";
+        }
+
+        function resetPage() {
+            document.getElementById('userID').value = '';
+            document.getElementById('result').style.display = 'none';
+            document.getElementById('result').innerHTML = '';
+        }
+    </script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>أداة إظهار التفاحة (لغرض تعليمي)</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+            background-color: #f0f0f0;
+        }
+        .container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        input[type="text"], button {
+            width: 90%;
+            padding: 10px;
+            margin: 8px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        #result {
+            margin-top: 20px;
+            padding: 15px;
+            border: 2px dashed #f44336;
+            color: #333;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Apple of Fortune Hack (تعليمي)</h2>
+        <p>لتجنب الاحتيال، يجب أن تعرف كيف يعمل! هذه الصفحة لا تقوم بأي اختراق حقيقي.</p>
+
+        <input type="text" id="userID" placeholder="أدخل رقم تعريف الحساب (ID)">
+        
+        <button onclick="showApple()">إظهار التفاحة</button>
+
+        <div id="result" style="display: none;">
+            تم تحديد موقع التفاحة!
+        </div>
+        
+        <button onclick="resetPage()" style="background-color: #555;">إعادة الضبط</button>
+    </div>
+
+    <script>
+        function showApple() {
+            // جلب قيمة رقم التعريف المدخلة
+            const user_id = document.getElementById('userID').value;
+            const result_div = document.getElementById('result');
+            
+            if (user_id.length < 5) {
+                alert("الرجاء إدخال رقم تعريف صحيح.");
+                return;
+            }
+
+            // *النقطة التعليمية: هنا يتم خداع المستخدم وإيهامه بالنجاح*
+            
+            result_div.style.display = 'block';
+            result_div.innerHTML = "✅ تم التحقق من الحساب! التفاحة موجودة في المربع رقم 4. (تذكر: هذه رسالة وهمية لغرض التعلم الأمني).";
+        }
+
+        function resetPage() {
+            document.getElementById('userID').value = '';
+            document.getElementById('result').style.display = 'none';
+            document.getElementById('result').innerHTML = '';
+        }
+    </script>
+</body>
+</html>
