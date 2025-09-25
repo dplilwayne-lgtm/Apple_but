@@ -1,2 +1,2 @@
-# Apple_but
+# Apple_bot
 اختراق للعبة Apple بسهولة 
